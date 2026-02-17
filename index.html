@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobacheva Academy | Инструкторский курс</title>
+    <!-- Единая таблица стилей -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 🧭 НАВИГАЦИЯ -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="navbar-brand">
+                <div class="navbar-brand-logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <div class="navbar-brand-content">
+                    <span class="navbar-brand-text">Lobacheva</span>
+                    <span class="navbar-brand-tagline">Academy</span>
+                </div>
+            </a>
+
+            <div class="navbar-nav">
+                <a href="#about" class="nav-link">О курсе</a>
+                <a href="#modules" class="nav-link">Программа</a>
+                <a href="#features" class="nav-link">Преимущества</a>
+                <a href="#testimonials" class="nav-link">Отзывы</a>
+            </div>
+
+            <div class="navbar-actions">
+                <a href="#cta" class="btn btn-primary">Начать</a>
+                <button class="navbar-toggle" id="menuToggle">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Мобильное меню (скрыто по умолчанию) -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about">О курсе</a>
+        <a href="#modules">Программа</a>
+        <a href="#features">Преимущества</a>
+        <a href="#testimonials">Отзывы</a>
+        <a href="#cta" class="btn btn-primary" style="width: 100%;">Начать обучение</a>
+    </div>
+
+    <!-- 🌟 ГЕРОЙ -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div>
+                    <div class="hero-badge">Курс 2026 — набор открыт</div>
+                    <h1 class="hero-title">
+                        Станьте <span>профессиональным</span> инструктором
+                    </h1>
+                    <p class="hero-subtitle">
+                        Полная подготовка от основ педагогики до открытия собственной школы. 
+                        Обучение от ведущих экспертов ногтевой индустрии.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#cta" class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                            Начать обучение
+                        </a>
+                        <a href="#modules" class="btn btn-secondary">Программа курса</a>
+                    </div>
+                    <div class="hero-features">
+                        <span class="hero-feature">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 8v8M8 12h8"/>
+                            </svg>
+                            500+ выпускников
+                        </span>
+                        <span class="hero-feature">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 8v8M8 12h8"/>
+                            </svg>
+                            10+ лет опыта
+                        </span>
+                        <span class="hero-feature">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 8v8M8 12h8"/>
+                            </svg>
+                            98% успешных
+                        </span>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&q=80" alt="Nail art" class="hero-image">
+                    </div>
+                    <div class="hero-card hero-card-1">
+                        <div class="hero-card-icon pink">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="hero-card-text">500+</div>
+                            <div class="hero-card-label">выпускников</div>
+                        </div>
+                    </div>
+                    <div class="hero-card hero-card-2">
+                        <div class="hero-card-icon mint">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="hero-card-text">4.9</div>
+                            <div class="hero-card-label">рейтинг</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📊 СТАТИСТИКА -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-animate>
+                    <div class="stat-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Выпускников</div>
+                </div>
+                <div class="stat-item" data-animate>
+                    <div class="stat-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-count="10">0</div>
+                    <div class="stat-label">Лет опыта</div>
+                </div>
+                <div class="stat-item" data-animate>
+                    <div class="stat-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V6.5A2.5 2.5 0 0 0 17.5 4H6.5A2.5 2.5 0 0 0 4 6.5v13z"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Модулей</div>
+                </div>
+                <div class="stat-item" data-animate>
+                    <div class="stat-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 15h18M3 9h18M3 3h18v18H3z"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-count="98">0</div>
+                    <div class="stat-label">% успешных</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 👤 О КУРСЕ -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag pink">О курсе</span>
+                <h2 class="section-title">Комплексная подготовка <span class="text-gradient">инструкторов</span></h2>
+                <p class="section-subtitle">Станьте востребованным специалистом в ногтевой индустрии с нашей программой обучения</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card" data-animate>
+                    <h3>Станьте востребованным инструктором</h3>
+                    <p>Наш курс разработан опытными педагогами и практиками ногтевой индустрии. Вы получите не только теоретические знания, но и практические навыки проведения занятий.</p>
+                    <ul class="about-list">
+                        <li><span class="about-check">✓</span> Методика преподавания</li>
+                        <li><span class="about-check">✓</span> Психология обучения</li>
+                        <li><span class="about-check">✓</span> Юридическое оформление</li>
+                        <li><span class="about-check">✓</span> Маркетинг и продвижение</li>
+                        <li><span class="about-check">✓</span> Практика на реальных учениках</li>
+                    </ul>
+                </div>
+
+                <div class="instructor-card" data-animate>
+                    <div class="instructor-image">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80" alt="Анна Лобачева">
+                    </div>
+                    <div class="instructor-info">
+                        <div class="instructor-avatar">АЛ</div>
+                        <div>
+                            <div class="instructor-name">Анна Лобачева</div>
+                            <div class="instructor-role">Автор курса</div>
+                            <div class="instructor-badges">
+                                <span class="instructor-badge pink">10+ лет</span>
+                                <span class="instructor-badge purple">500+ выпускников</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📚 ПРОГРАММА МОДУЛЕЙ -->
+    <section class="section modules" id="modules">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag blue">Программа</span>
+                <h2 class="section-title">Что вы изучите на <span class="text-gradient">курсе</span></h2>
+                <p class="section-subtitle">Подробное описание модулей и тем, которые помогут вам стать профессионалом</p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3 class="accordion-title">Модуль 1: Основы педагогики и психологии</h3>
+                        <div class="accordion-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <ul>
+                                <li>Принципы обучения взрослых</li>
+                                <li>Эффективная коммуникация с учениками</li>
+                                <li>Мотивация и управление группой</li>
+                                <li>Разработка учебных планов</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3 class="accordion-title">Модуль 2: Методика преподавания ногтевого сервиса</h3>
+                        <div class="accordion-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <ul>
+                                <li>Структура практических занятий</li>
+                                <li>Демонстрация и отработка техник</li>
+                                <li>Исправление ошибок учеников</li>
+                                <li>Создание авторских программ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3 class="accordion-title">Модуль 3: Юридические и маркетинговые аспекты</h3>
+                        <div class="accordion-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <ul>
+                                <li>Регистрация и лицензирование</li>
+                                <li>Продвижение в социальных сетях</li>
+                                <li>Создание личного бренда</li>
+                                <li>Ценообразование и продажи</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3 class="accordion-title">Модуль 4: Практика и стажировка</h3>
+                        <div class="accordion-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <ul>
+                                <li>Проведение пробных уроков</li>
+                                <li>Обратная связь и анализ</li>
+                                <li>Создание портфолио</li>
+                                <li>Возможность трудоустройства</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✨ ПРЕИМУЩЕСТВА -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag orange">Преимущества</span>
+                <h2 class="section-title">Почему выбирают <span class="text-gradient">нас</span></h2>
+                <p class="section-subtitle">Мы предлагаем уникальные условия для вашего профессионального роста</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon pink">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <h3>Актуальная программа</h3>
+                    <p>Постоянно обновляем материалы в соответствии с трендами индустрии.</p>
+                </div>
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Опытные преподаватели</h3>
+                    <p>Вас обучают ведущие эксперты с многолетним стажем.</p>
+                </div>
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon orange">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </div>
+                    <h3>Практика и стажировка</h3>
+                    <p>Реальный опыт работы и возможность трудоустройства.</p>
+                </div>
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon purple">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Поддержка после курса</h3>
+                    <p>Мы не оставляем своих выпускников после завершения обучения.</p>
+                </div>
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon cyan">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3>Гибкий формат обучения</h3>
+                    <p>Обучайтесь в удобном для вас темпе, совмещая с работой.</p>
+                </div>
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon yellow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <h3>Сертификация</h3>
+                    <p>Получите официальный сертификат, подтверждающий вашу квалификацию.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 💬 ОТЗЫВЫ -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag purple">Отзывы</span>
+                <h2 class="section-title">Что говорят <span class="text-gradient">наши выпускники</span></h2>
+                <p class="section-subtitle">Истории успеха и впечатления от обучения в Lobacheva Academy</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-animate>
+                    <p class="testimonial-text">"Курс превзошел все мои ожидания! Я получила не только глубокие знания, но и уверенность в своих силах. Теперь я успешный инструктор!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Алина Смирнова" class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Алина Смирнова</div>
+                            <div class="testimonial-role">Выпускница 2023</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-animate>
+                    <p class="testimonial-text">"Благодаря Lobacheva Academy я смогла открыть свою собственную школу. Методики преподавания на высшем уровне!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80" alt="Елена Козлова" class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Елена Козлова</div>
+                            <div class="testimonial-role">Выпускница 2022</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-animate>
+                    <p class="testimonial-text">"Очень благодарна за индивидуальный подход и поддержку. Мои ученики в восторге от новых знаний, которые я получила!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&q=80" alt="Мария Иванова" class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Мария Иванова</div>
+                            <div class="testimonial-role">Выпускница 2024</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📞 ПРИЗЫВ К ДЕЙСТВИЮ (CTA) -->
+    <section class="cta" id="cta">
+        <div class="cta-bg"></div>
+        <div class="cta-container">
+            <div class="cta-content" data-animate>
+                <h2 class="cta-title">Готовы стать <span class="text-gradient">инструктором мечты</span>?</h2>
+                <p class="cta-subtitle">Присоединяйтесь к нашему курсу и начните свой путь к успеху уже сегодня!</p>
+                <a href="#" class="btn btn-primary">Записаться на курс</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🦶 ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#" class="navbar-brand">
+                        <div class="navbar-brand-logo">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <div class="navbar-brand-content">
+                            <span class="navbar-brand-text">Lobacheva</span>
+                            <span class="navbar-brand-tagline">Academy</span>
+                        </div>
+                    </a>
+                    <p>Ваш путь к профессиональному успеху в ногтевой индустрии.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Vkontakte">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-vk"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        </a>
+                        <a href="#" aria-label="Telegram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#about">О курсе</a></li>
+                        <li><a href="#modules">Программа</a></li>
+                        <li><a href="#features">Преимущества</a></li>
+                        <li><a href="#testimonials">Отзывы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="mailto:info@lobacheva.academy">info@lobacheva.academy</a></li>
+                        <li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Правовая информация</h4>
+                    <ul>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Lobacheva Academy. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Мобильное меню
+        const menuToggle = document.getElementById("menuToggle");
+        const mobileMenu = document.getElementById("mobileMenu");
+        menuToggle.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
+            menuToggle.classList.toggle("active");
+        });
+
+        // Закрытие мобильного меню при клике на ссылку
+        document.querySelectorAll(".mobile-menu a").forEach(link => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.remove("active");
+                menuToggle.classList.remove("active");
+            });
+        });
+
+        // Изменение Navbar при скролле
+        window.addEventListener("scroll", () => {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+
+        // Анимация чисел при скролле
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    el.classList.add("is-visible");
+                    if (el.classList.contains("stat-item")) {
+                        const numberEl = el.querySelector(".stat-number");
+                        if (numberEl) {
+                            animateCounter(numberEl);
+                        }
+                    }
+                    observer.unobserve(el);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+        function animateCounter(el) {
+            const target = parseInt(el.dataset.count);
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                el.textContent = Math.floor(current) + '+';
+            }, 16);
+        }
+
+        // Плавный скролл для якорей
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
